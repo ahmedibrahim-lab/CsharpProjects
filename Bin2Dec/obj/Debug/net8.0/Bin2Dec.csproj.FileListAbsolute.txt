@@ -1,0 +1,14 @@
+C:\Users\ahmed\CsharpProjects\Bin2Dec\bin\Debug\net8.0\Bin2Dec.exe
+C:\Users\ahmed\CsharpProjects\Bin2Dec\bin\Debug\net8.0\Bin2Dec.deps.json
+C:\Users\ahmed\CsharpProjects\Bin2Dec\bin\Debug\net8.0\Bin2Dec.runtimeconfig.json
+C:\Users\ahmed\CsharpProjects\Bin2Dec\bin\Debug\net8.0\Bin2Dec.dll
+C:\Users\ahmed\CsharpProjects\Bin2Dec\bin\Debug\net8.0\Bin2Dec.pdb
+C:\Users\ahmed\CsharpProjects\Bin2Dec\obj\Debug\net8.0\Bin2Dec.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed\CsharpProjects\Bin2Dec\obj\Debug\net8.0\Bin2Dec.AssemblyInfoInputs.cache
+C:\Users\ahmed\CsharpProjects\Bin2Dec\obj\Debug\net8.0\Bin2Dec.AssemblyInfo.cs
+C:\Users\ahmed\CsharpProjects\Bin2Dec\obj\Debug\net8.0\Bin2Dec.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\CsharpProjects\Bin2Dec\obj\Debug\net8.0\Bin2Dec.dll
+C:\Users\ahmed\CsharpProjects\Bin2Dec\obj\Debug\net8.0\refint\Bin2Dec.dll
+C:\Users\ahmed\CsharpProjects\Bin2Dec\obj\Debug\net8.0\Bin2Dec.pdb
+C:\Users\ahmed\CsharpProjects\Bin2Dec\obj\Debug\net8.0\Bin2Dec.genruntimeconfig.cache
+C:\Users\ahmed\CsharpProjects\Bin2Dec\obj\Debug\net8.0\ref\Bin2Dec.dll

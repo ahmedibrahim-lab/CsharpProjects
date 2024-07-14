@@ -1,0 +1,54 @@
+@page
+@model WebCalculator.Pages.CalculatorModel
+@{
+    ViewData["Title"] = "Calculator";
+}
+
+<h2>Calculator</h2>
+
+<div>
+    <form method="post">
+        <input type="text" id="expression" name="expression" value="@Model.Expression" readonly />
+        <br />
+        <button type="button" onclick="appendToExpression('1')">1</button>
+        <button type="button" onclick="appendToExpression('2')">2</button>
+        <button type="button" onclick="appendToExpression('3')">3</button>
+        <button type="button" onclick="appendToExpression('+')">+</button>
+        <br />
+        <button type="button" onclick="appendToExpression('4')">4</button>
+        <button type="button" onclick="appendToExpression('5')">5</button>
+        <button type="button" onclick="appendToExpression('6')">6</button>
+        <button type="button" onclick="appendToExpression('-')">-</button>
+        <br />
+        <button type="button" onclick="appendToExpression('7')">7</button>
+        <button type="button" onclick="appendToExpression('8')">8</button>
+        <button type="button" onclick="appendToExpression('9')">9</button>
+        <button type="button" onclick="appendToExpression('*')">*</button>
+        <br />
+        <button type="button" onclick="appendToExpression('0')">0</button>
+        <button type="button" onclick="appendToExpression('(')">(</button>
+        <button type="button" onclick="appendToExpression(')')">)</button>
+        <button type="button" onclick="appendToExpression('/')">/</button>
+        <br />
+        <button type="button" onclick="appendToExpression('^')">^</button>
+        <button type="button" onclick="clearExpression()">C</button>
+        <button type="submit">=</button>
+    </form>
+</div>
+
+@if (Model.Result.HasValue)
+{
+    <p>Result: @Model.Result.Value</p>
+}
+
+@section Scripts {
+    <script>
+        function appendToExpression(value) {
+            document.getElementById('expression').value += value;
+        }
+
+        function clearExpression() {
+            document.getElementById('expression').value = '';
+        }
+    </script>
+}
