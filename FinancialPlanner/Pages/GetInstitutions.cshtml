@@ -1,0 +1,21 @@
+@page
+@model FinancialPlanner.Pages.GetInstitutionsModel
+@{
+    ViewData["Title"] = "Get Institutions";
+}
+
+<h1>API Response</h1>
+<pre>@Model.InstitutionsResponse</pre>
+
+<h2>Create Agreement</h2>
+<form method="post">
+    <label for="institutionId">Select Institution ID:</label>
+    <input type="text" id="institutionId" name="SelectedInstitutionId" />
+    <button type="submit" asp-page-handler="CreateAgreement">Create Agreement</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.AgreementResponse))
+{
+    <h2>Agreement Response</h2>
+    <pre>@Model.AgreementResponse</pre>
+}
