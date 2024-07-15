@@ -5,12 +5,17 @@
 }
 
 <h1>API Response</h1>
-<pre>@Model.InstitutionsResponse</pre>
+<pre>@Model.Institutions</pre>
 
-<h2>Create Agreement</h2>
+<h2>Select Institution and Create Agreement</h2>
 <form method="post">
-    <label for="institutionId">Select Institution ID:</label>
-    <input type="text" id="institutionId" name="SelectedInstitutionId" />
+    <label for="institutionId">Select Institution:</label>
+    <select id="institutionId" name="SelectedInstitutionId" asp-for="SelectedInstitutionId">
+        @foreach (var institution in Model.Institutions)
+        {
+            <option value="@institution.Id">@institution.Name (@institution.Id)</option>
+        }
+    </select>
     <button type="submit" asp-page-handler="CreateAgreement">Create Agreement</button>
 </form>
 

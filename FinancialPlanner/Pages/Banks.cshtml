@@ -1,0 +1,22 @@
+@page
+@model FinancialPlanner.Pages.BanksModel
+@{
+    ViewData["Title"] = "Banks";
+}
+
+<h1>Banks</h1>
+<p>Here is a list of all institutions with their logos:</p>
+
+<div class="row">
+    @foreach (var institution in Model.Institutions)
+    {
+        <div class="col-md-3 text-center mb-4">
+            <div class="card shadow-sm" style="border-radius: 15px;">
+                <div class="card-body">
+                    <h5 class="card-title">@institution.Name</h5>
+                    <img src="@institution.Logo" alt="@institution.Name logo" class="img-fluid" style="max-height: 100px; margin-top: 10px;" />
+                </div>
+            </div>
+        </div>
+    }
+</div>

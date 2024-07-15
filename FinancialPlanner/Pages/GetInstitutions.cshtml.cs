@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using FinancialPlanner.Services;
 
@@ -14,7 +15,7 @@ namespace FinancialPlanner.Pages
             _financialService = financialService;
         }
 
-        public string InstitutionsResponse { get; private set; }
+        public List<Institution> Institutions { get; private set; }
         public string AgreementResponse { get; private set; }
 
         [BindProperty]
@@ -27,7 +28,7 @@ namespace FinancialPlanner.Pages
 
             // Ensure the token is fetched and set before making the institutions API call
             await _financialService.EnsureTokenAsync(secretId, secretKey);
-            InstitutionsResponse = await _financialService.GetInstitutionsAsync();
+            Institutions = await _financialService.GetInstitutionsAsync();
         }
 
         public async Task<IActionResult> OnPostCreateAgreementAsync()
